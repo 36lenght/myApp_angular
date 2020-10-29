@@ -1,0 +1,9 @@
+<p>myc07 works!</p>
+<button (click)="add()">{{num}}</button>
+<button (click)="num = num + 1">{{num}}</button>
+
+<div>
+  <button (click)="num = num - 1" [disabled]="num == 1">-</button>
+  <b>{{num}}</b>
+  <button (click)="add()">+</button>
+</div>

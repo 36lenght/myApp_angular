@@ -1,0 +1,13 @@
+<p>myc09 works!</p>
+
+<div>
+  <div>名称：{{ name }}</div>
+  <div>单价：{{ price }}</div>
+  <div>
+    <button (click)="count = count - 1" [disabled]="count == 1">-</button>
+    <input type="text" [(ngModel)]="count">
+    <button (click)="count = count + 1" >+</button>
+  </div>
+  <div>总价格：￥{{price*count}}</div>
+  <div></div>
+</div>
